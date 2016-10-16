@@ -7,6 +7,7 @@ Our Scripts behind this:<br>
 ```
 Magic URL extractor is a cross domain data extractor plugin, we are busy in developing a optimize plugin for various purpose.
 Till now use this plugin to extract cross domain commerce product details with URL (at this time plugin in beta version so only support top e commerce sites in India).
+
 <img src="img/url-extractor.gif">
 
 ## How it works ? 
