@@ -14,4 +14,6 @@ It's not easy to handle complete external DOM data without affecting your server
 Our next step to filter data for Ajax, Css and Javascript request, after filtering all those things we process with converting in html format and store in local container.
 We again process request for find exact data from container and after getting all required result we display actual product only data.
 <br>
+URL --> Proxymapping --> CrossDomain request --> Request and save html data in Json --> Filter data for avoid concole erros and DOM optimixzation --> Process various data handling --> Show result
+<br>
 <h3> Complete Documentation will be available soon, till now any contribution appreciated </h3>
