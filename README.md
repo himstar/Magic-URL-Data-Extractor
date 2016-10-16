@@ -19,7 +19,9 @@ Our next step to filter data for Ajax, Css and Javascript request, after filteri
 We again process request for find exact data from container and after getting all required result we display actual product only data.
 
 ```
-URL --> Proxymapping --> CrossDomain request --> Request and save html data in Json --> Filter data for avoid concole erros and DOM optimixzation --> Process various data handling --> Show result
+URL --> Proxymapping --> CrossDomain request --> Request and save html data 
+in Json--> Filter data to avoid concole erros and DOM 
+optimization --> Proceess various data handling --> Show the result
 ```
 ```ruby
      $.getJSON("http://query.yahooapis.com/v1/public/yql?"+
@@ -27,4 +29,14 @@ URL --> Proxymapping --> CrossDomain request --> Request and save html data in J
              encodeURIComponent(url)+
               "%22&format=xml'&callback=?",
 ```
-### Complete Documentation will be available soon, till now any contribution appreciated 
+#### Data filtering
+
+```ruby
+    data = data.replace(/<?\/body[^>]*>/g,'');
+    data = data.replace(/[\r|\n]+/g,'');
+    data = data.replace(/<--[\S\s]*?-->/g,'');
+    data = data.replace(/<noscript[^>]*>[\S\s]*?<\/noscript>/g,'');
+    data = data.replace(/<script[^>]*>[\S\s]*?<\/script>/g,'');
+    data = data.replace(/<script.*\/>/,'');
+ ```
+### Complete Documentation will be available soon, till then any contribution appreciated 
