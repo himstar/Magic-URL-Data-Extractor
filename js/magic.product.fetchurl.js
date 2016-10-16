@@ -32,6 +32,7 @@ function call_product(url) {
         var parseImg_base = img_data.base_path;
         var img = parseImg_base+parseImg; 
         var price = $('.actual-price').text();
+        var seller = "Jabong";
         product_push(title,price,img,url,seller);
     }
     else if (url.indexOf("myntra") >= 0)
